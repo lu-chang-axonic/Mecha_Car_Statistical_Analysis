@@ -1,7 +1,7 @@
 # MechaCar Statistical Analysis
 
 ## Deliverable One
-1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+### 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?  
 I first set the intended p-value to 0.05 and run all the variables against mpg as the dependent variable.
 
 #### First Model
@@ -73,10 +73,10 @@ ground_clearance   3.5669     0.5401   6.604 3.26e-08 ***
 
 At this point, all variables are statisically significant, indicating tht vehicle_length and ground_clearnace provided a non-random amount of variance to the mpg values in the dataset. So this will be my final model. 
 
-2. Is the slope of the linear model considered to be zero? Why or why not?
+### 2. Is the slope of the linear model considered to be zero? Why or why not?
 As shown by the P value of the coefficients, the slop of the linear model is considered to be statisically significant given a 95% confidence level. Therefore the slope of the model is not zero.
 
-3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+### 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 As shown by the R-squared below, this model can predicate 67.4% of the dependent variable (mpg). Therefore, it is considered relatively effective. 
 
 Residual standard error: 9.078 on 47 degrees of freedom  
