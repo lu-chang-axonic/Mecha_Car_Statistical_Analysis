@@ -95,4 +95,26 @@ However, the by lot analysis shows that Lot3 has a variance of 170.3 and does no
 
 ![](https://github.com/lu-chang-axonic/Mecha_Car_Statistical_Analysis/blob/main/lot_summary.PNG)
 
+## Deliverable Three--T-Tests on Suspension Coils
+### Test for Total Lots
+The t-test shows that the total PSI mean is not significantly away from the population mean of 1,500. As indicated by the p-value of 0.06 (higher than the intended level of 0.05).  
 
+One Sample t-test  
+
+data:  Suspension_Coil$PSI  
+t = -1.8931, df = 149, p-value = 0.06028  
+alternative hypothesis: true mean is not equal to 1500  
+95 percent confidence interval:  
+ 1497.507 1500.053  
+sample estimates:  
+mean of x   
+  1498.78   
+
+### Comparison for Lot One
+
+
+
+
+### Comparison for Lot Two
+
+### Comparison for Lot Three
