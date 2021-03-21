@@ -2,6 +2,8 @@
 
 ## Deliverable One
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+I first set the intended p-value to 0.05 and run all the variables against mpg as the dependent variable.
+
 #### First Model
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
     ground_clearance + AWD, data = MechaCar_mpg)
