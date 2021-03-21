@@ -77,7 +77,7 @@ As shown by the P value of the coefficients, the slop of the linear model is con
 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 As shown by the R-squared below, this model can predicate 67.4% of the dependent variable (mpg). Therefore, it is considered relatively effective. 
 
-Residual standard error: 9.078 on 47 degrees of freedom
-Multiple R-squared:  0.674,	Adjusted R-squared:  0.6601 
-F-statistic: 48.59 on 2 and 47 DF,  p-value: 3.637e-12
+Residual standard error: 9.078 on 47 degrees of freedom  
+Multiple R-squared:  0.674,	Adjusted R-squared:  0.6601   
+F-statistic: 48.59 on 2 and 47 DF,  p-value: 3.637e-12  
 
