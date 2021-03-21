@@ -155,8 +155,8 @@ mean of x
   1496.14   
 
 ## Deliverable Four -- Study Design: MechaCar vs Competition.
+I'd choose horse power and fuel efficiency to be the two metrics to test against. 
+#### H0: There is no difference between the ratio of horse power and fuel efficiency of MechaCar against a competing brand.
+#### H1: There is a difference between the ratio of horse power and fuel efficiency of MechaCar against a competing brand.
 
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+I would use Two-Sample t-Test to performance the test on both samples. This is a suitable test to test if there is a statistical difference between the distribution means from two samples. In order to do the test, I will collect horse power and fuel efficency data for both brand by selecting randome sample of cars.
