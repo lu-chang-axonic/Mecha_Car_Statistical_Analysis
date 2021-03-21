@@ -74,7 +74,7 @@ ground_clearance   3.5669     0.5401   6.604 3.26e-08 ***
 At this point, all variables are statisically significant, indicating tht vehicle_length and ground_clearnace provided a non-random amount of variance to the mpg values in the dataset. So this will be my final model. 
 
 ### 2. Is the slope of the linear model considered to be zero? Why or why not?
-As shown by the P value of the coefficients, the slop of the linear model is considered to be statisically significant given a 95% confidence level. Therefore the slope of the model is not zero.
+As shown by the P value of the coefficients, the slop of the linear model is considered to be statistically significant given a 95% confidence level. Therefore the slope of the model is not zero.
 
 ### 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 As shown by the R-squared below, this model can predicate 67.4% of the dependent variable (mpg). Therefore, it is considered relatively effective. 
@@ -85,9 +85,8 @@ F-statistic: 48.59 on 2 and 47 DF,  p-value: 3.637e-12
 
 
 ## Deliverable Two
-Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch.The current manufacturing data meet this design specification for all manufacturing lots in total. 
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The current manufacturing data meet this design specification for all manufacturing lots in total. 
 
 ![](https://github.com/lu-chang-axonic/Mecha_Car_Statistical_Analysis/blob/main/total_summary.PNG)
 
@@ -159,4 +158,4 @@ I'd choose horse power and fuel efficiency to be the two metrics to test against
 #### H0: There is no difference between the ratio of horse power and fuel efficiency of MechaCar against a competing brand.
 #### H1: There is a difference between the ratio of horse power and fuel efficiency of MechaCar against a competing brand.
 
-I would use Two-Sample t-Test to performance the test on both samples. This is a suitable test to test if there is a statistical difference between the distribution means from two samples. In order to do the test, I will collect horse power and fuel efficency data for both brand by selecting randome sample of cars.
+I would use Two-Sample t-Test to performance the test on both samples. This is a suitable test to test if there is a statistical difference between the distribution means from two samples. In order to do the test, I will collect horse power and fuel efficiency data for both brand by selecting random sample of cars.
