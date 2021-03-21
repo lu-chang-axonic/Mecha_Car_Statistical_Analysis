@@ -154,4 +154,6 @@ sample estimates:
 mean of x   
   1496.14   
 
+## Deliverable Four -- Study Design: MechaCar vs Competition.
+
 
