@@ -6,11 +6,11 @@
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
     ground_clearance + AWD, data = MechaCar_mpg)
 
-Residuals:  
+Residuals:    
      Min       1Q   Median       3Q      Max 
 -19.4701  -4.4994  -0.0692   5.4433  18.5849 
 
-Coefficients:
+Coefficients:  
                    Estimate Std. Error t value Pr(>|t|)    
 (Intercept)      -1.040e+02  1.585e+01  -6.559 5.08e-08 ***  
 vehicle_length    6.267e+00  6.553e-01   9.563 2.60e-12 ***  
@@ -23,50 +23,51 @@ Because spoiler_angle has a P value of 0.30, remove it and rerun the model.
 
 #### Second Model
 lm(formula = mpg ~ vehicle_length + vehicle_weight + ground_clearance + 
-    AWD, data = MechaCar_mpg)
+    AWD, data = MechaCar_mpg)  
 
-Residuals:
-     Min       1Q   Median       3Q      Max 
--19.1546  -5.6069   0.6985   6.1669  19.0554 
+Residuals:  
+     Min       1Q   Median       3Q      Max  
+-19.1546  -5.6069   0.6985   6.1669  19.0554  
 
-Coefficients:
-                   Estimate Std. Error t value Pr(>|t|)    
-(Intercept)      -9.728e+01  1.448e+01  -6.717 2.68e-08 ***
-vehicle_length    6.233e+00  6.550e-01   9.516 2.40e-12 ***
-vehicle_weight    1.169e-03  6.857e-04   1.706    0.095 .  
-ground_clearance  3.419e+00  5.276e-01   6.481 6.03e-08 ***
-AWD              -3.749e+00  2.515e+00  -1.490    0.143     
+Coefficients:  
+                   Estimate Std. Error t value Pr(>|t|)       
+(Intercept)      -9.728e+01  1.448e+01  -6.717 2.68e-08 ***  
+vehicle_length    6.233e+00  6.550e-01   9.516 2.40e-12 ***  
+vehicle_weight    1.169e-03  6.857e-04   1.706    0.095 .    
+ground_clearance  3.419e+00  5.276e-01   6.481 6.03e-08 ***  
+AWD              -3.749e+00  2.515e+00  -1.490    0.143       
 
 After spoiler_angle was removed, AWD became the least statistically significant. Remove AWD and rerun the model.
 
 #### Third Model
 lm(formula = mpg ~ vehicle_length + vehicle_weight + ground_clearance, 
-    data = MechaCar_mpg)
+    data = MechaCar_mpg)  
 
-Residuals:
-     Min       1Q   Median       3Q      Max 
--21.1845  -6.0392   0.1843   7.0213  17.6710 
+Residuals:  
+     Min       1Q   Median       3Q      Max   
+-21.1845  -6.0392   0.1843   7.0213  17.6710   
 
-Coefficients:
-                   Estimate Std. Error t value Pr(>|t|)    
-(Intercept)      -1.000e+02  1.455e+01  -6.874 1.41e-08 ***
-vehicle_length    6.196e+00  6.632e-01   9.343 3.37e-12 ***
-vehicle_weight    1.190e-03  6.946e-04   1.714   0.0933 .  
-ground_clearance  3.522e+00  5.299e-01   6.647 3.09e-08 ***
+Coefficients:  
+                   Estimate Std. Error t value Pr(>|t|)      
+(Intercept)      -1.000e+02  1.455e+01  -6.874 1.41e-08 ***  
+vehicle_length    6.196e+00  6.632e-01   9.343 3.37e-12 ***  
+vehicle_weight    1.190e-03  6.946e-04   1.714   0.0933 .    
+ground_clearance  3.522e+00  5.299e-01   6.647 3.09e-08 ***  
 
 After AWD was removed, vehicle_weight became the least statistically significant. Remove vehicle_weight and rerun the model
-lm(formula = mpg ~ vehicle_length + ground_clearance, data = MechaCar_mpg)
 
 #### Fourth Model
-Residuals:
-    Min      1Q  Median      3Q     Max 
--17.493  -7.705   1.344   6.642  18.500 
+lm(formula = mpg ~ vehicle_length + ground_clearance, data = MechaCar_mpg)  
 
-Coefficients:
-                 Estimate Std. Error t value Pr(>|t|)    
-(Intercept)      -91.5573    13.9649  -6.556 3.86e-08 ***
-vehicle_length     6.0811     0.6732   9.033 7.68e-12 ***
-ground_clearance   3.5669     0.5401   6.604 3.26e-08 ***
+Residuals:  
+    Min      1Q  Median      3Q     Max   
+-17.493  -7.705   1.344   6.642  18.500   
+
+Coefficients:  
+                 Estimate Std. Error t value Pr(>|t|)      
+(Intercept)      -91.5573    13.9649  -6.556 3.86e-08 ***  
+vehicle_length     6.0811     0.6732   9.033 7.68e-12 ***  
+ground_clearance   3.5669     0.5401   6.604 3.26e-08 ***  
 
 At this point, all variables are statisically significant, indicating tht vehicle_length and ground_clearnace provided a non-random amount of variance to the mpg values in the dataset. So this will be my final model. 
 
