@@ -2,26 +2,26 @@
 
 ## Deliverable One
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-### First Model
+#### First Model
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
     ground_clearance + AWD, data = MechaCar_mpg)
 
-Residuals:
+Residuals:  
      Min       1Q   Median       3Q      Max 
 -19.4701  -4.4994  -0.0692   5.4433  18.5849 
 
 Coefficients:
                    Estimate Std. Error t value Pr(>|t|)    
-(Intercept)      -1.040e+02  1.585e+01  -6.559 5.08e-08 ***
-vehicle_length    6.267e+00  6.553e-01   9.563 2.60e-12 ***
-vehicle_weight    1.245e-03  6.890e-04   1.807   0.0776 .  
-spoiler_angle     6.877e-02  6.653e-02   1.034   0.3069    
-ground_clearance  3.546e+00  5.412e-01   6.551 5.21e-08 ***
-AWD              -3.411e+00  2.535e+00  -1.346   0.1852    
+(Intercept)      -1.040e+02  1.585e+01  -6.559 5.08e-08 ***  
+vehicle_length    6.267e+00  6.553e-01   9.563 2.60e-12 ***  
+vehicle_weight    1.245e-03  6.890e-04   1.807   0.0776 .    
+spoiler_angle     6.877e-02  6.653e-02   1.034   0.3069      
+ground_clearance  3.546e+00  5.412e-01   6.551 5.21e-08 ***  
+AWD              -3.411e+00  2.535e+00  -1.346   0.1852      
 
 Because spoiler_angle has a P value of 0.30, remove it and rerun the model.
 
-### Second Model
+#### Second Model
 lm(formula = mpg ~ vehicle_length + vehicle_weight + ground_clearance + 
     AWD, data = MechaCar_mpg)
 
@@ -39,7 +39,7 @@ AWD              -3.749e+00  2.515e+00  -1.490    0.143
 
 After spoiler_angle was removed, AWD became the least statistically significant. Remove AWD and rerun the model.
 
-### Third Model
+#### Third Model
 lm(formula = mpg ~ vehicle_length + vehicle_weight + ground_clearance, 
     data = MechaCar_mpg)
 
@@ -57,7 +57,7 @@ ground_clearance  3.522e+00  5.299e-01   6.647 3.09e-08 ***
 After AWD was removed, vehicle_weight became the least statistically significant. Remove vehicle_weight and rerun the model
 lm(formula = mpg ~ vehicle_length + ground_clearance, data = MechaCar_mpg)
 
-### Fourth Model
+#### Fourth Model
 Residuals:
     Min      1Q  Median      3Q     Max 
 -17.493  -7.705   1.344   6.642  18.500 
